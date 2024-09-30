@@ -1,0 +1,38 @@
+:root {
+   --text-color: #FFFFFF;
+   --card-front-color: #556B2F;
+   --card-back-color: #6B8E23;
+}
+
+body {
+    background: url('img/bg-desktop.webp');
+    font-family: Roboto Slab;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4rem;
+    gap: 3rem;
+}
+
+.cartao {
+    margin: 1rem 1rem;
+    height: 20rem;
+    flex-grow: 1;
+    flex-basis: calc(33% - 6rem);
+}
+
+.cartao__conteudo {
+    background-color: var(--card-front-color);
+    text-align: center;
+    /*backgroud-color:DarkOliveGreen: */
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transforma300ms ease-in-out;
+}
+
+.cartao__conteudo h3 {
+    color: var(--text-color);
+}
